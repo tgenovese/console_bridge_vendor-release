@@ -1,0 +1,13 @@
+Source: ros-dashing-console-bridge-vendor
+Section: misc
+Priority: extra
+Maintainer: Steven! Ragnarök <steven@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libconsole-bridge-dev, ros-dashing-ament-cmake, ros-dashing-ros-workspace
+Homepage: https://github.com/ros/console_bridge
+Standards-Version: 3.9.2
+
+Package: ros-dashing-console-bridge-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libconsole-bridge-dev, ros-dashing-ros-workspace
+Description: Wrapper around console_bridge, providing nothing but a dependency on console_bridge, on some systems.
+ On others, it provides an ExternalProject build of console_bridge.
