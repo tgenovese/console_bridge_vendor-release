@@ -2,7 +2,7 @@ This document is a declaration of software quality for the `console_bridge_vendo
 
 # `console_bridge_vendor` Quality Declaration
 
-The package `console_bridge_vendor` claims to be in the **Quality Level 4** category.
+The package `console_bridge_vendor` claims to be in the **Quality Level 2** category.
 
 Below are the rationales, notes, and caveats for this claim, organized by each requirement listed in the [Package Quality Categories in REP-2004](https://index.ros.org/doc/ros2/Contributing/Developer-Guide/#package-quality-categories) of the ROS2 developer guide.
 
@@ -46,7 +46,13 @@ All pull requests will be peer-reviewed, check [ROS 2 Developer Guide](https://i
 
 ### Continuous Integration [2.iv]
 
-This package is not being tested under ROS2 CI.
+All pull requests must pass CI on all [tier 1 platforms](https://www.ros.org/reps/rep-2000.html#support-tiers).
+
+Current nightly results can be seen here:
+* [linux-aarch64_release](https://ci.ros2.org/view/nightly/job/nightly_linux-aarch64_release/lastBuild/testReport/console_bridge_vendor/)
+* [linux_release](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/console_bridge_vendor/)
+* [mac_osx_release](https://ci.ros2.org/view/nightly/job/nightly_osx_release/lastBuild/testReport/console_bridge_vendor/)
+* [windows_release](https://ci.ros2.org/view/nightly/job/nightly_win_rel/lastBuild/testReport/console_bridge_vendor/)
 
 ###  Documentation Policy [2.v]
 
@@ -90,7 +96,13 @@ The copyright holders each provide a statement of copyright in each source code 
 
 ### Linters and Static Analysis [4.v]
 
-`console_bridge_vendor` is not being tested with linters or static analysis tools.
+`console_bridge_vendor` is tested with `xmllint` and `lint_cmake` on [tier 1 platforms](https://www.ros.org/reps/rep-2000.html#support-tiers).
+
+Current nightly results can be seen here:
+* [linux-aarch64_release](https://ci.ros2.org/view/nightly/job/nightly_linux-aarch64_release/lastBuild/testReport/console_bridge_vendor/)
+* [linux_release](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/console_bridge_vendor/)
+* [mac_osx_release](https://ci.ros2.org/view/nightly/job/nightly_osx_release/lastBuild/testReport/console_bridge_vendor/)
+* [windows_release](https://ci.ros2.org/view/nightly/job/nightly_win_rel/lastBuild/testReport/console_bridge_vendor/)
 
 ## Dependencies [5]
 
@@ -100,7 +112,7 @@ The copyright holders each provide a statement of copyright in each source code 
 
 ### Direct Runtime non-ROS Dependency [5.iii]
 
-`console_bridge_vendor` depends directly on the external dependency `libconsole-bridge-dev`, which is qualified as quality level 4 in its [Quality Declaration](https://github.com/ros/console_bridge/blob/master/QUALITY_DECLARATION.md).
+`console_bridge_vendor` depends directly on the external dependency `libconsole-bridge-dev`, which is qualified as quality level 2 in its [Quality Declaration](https://github.com/ros/console_bridge/blob/master/QUALITY_DECLARATION.md).
 
 ## Platform Support [6]
 
@@ -110,4 +122,4 @@ The copyright holders each provide a statement of copyright in each source code 
 
 ### Vulnerability Disclosure Policy [7.i]
 
-This package does not yet have a Vulnerability Disclosure Policy.
+This package conforms to the Vulnerability Disclosure Policy in [REP-2006](https://www.ros.org/reps/rep-2006.html).
