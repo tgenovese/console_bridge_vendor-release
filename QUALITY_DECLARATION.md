@@ -2,7 +2,7 @@ This document is a declaration of software quality for the `console_bridge_vendo
 
 # `console_bridge_vendor` Quality Declaration
 
-The package `console_bridge_vendor` claims to be in the **Quality Level 2** category.
+The package `console_bridge_vendor` claims to be in the **Quality Level 1** category.
 
 Below are the rationales, notes, and caveats for this claim, organized by each requirement listed in the [Package Quality Categories in REP-2004](https://index.ros.org/doc/ros2/Contributing/Developer-Guide/#package-quality-categories) of the ROS2 developer guide.
 
@@ -92,6 +92,8 @@ The copyright holders each provide a statement of copyright in each source code 
 
 ### Performance [4.iv]
 
+The Console Bridge package is benchmarked and the most recent test results can be found [here](http://build.ros2.org/view/Fci/job/Fci__benchmark_ubuntu_focal_amd64/BenchmarkTable/).
+
 `console_bridge_vendor` does not provide performance testing. For vendored packages, this will be considered to be addressed in the external dependency.
 
 ### Linters and Static Analysis [4.v]
@@ -112,7 +114,7 @@ Current nightly results can be seen here:
 
 ### Direct Runtime non-ROS Dependency [5.iii]
 
-`console_bridge_vendor` depends directly on the external dependency `libconsole-bridge-dev`, which is qualified as quality level 2 in its [Quality Declaration](https://github.com/ros/console_bridge/blob/master/QUALITY_DECLARATION.md).
+`console_bridge_vendor` depends directly on the external dependency `libconsole-bridge-dev`, which is qualified as quality level 2 in its [Quality Declaration](https://github.com/ros/console_bridge/blob/foxy/QUALITY_DECLARATION.md).
 
 ## Platform Support [6]
 
