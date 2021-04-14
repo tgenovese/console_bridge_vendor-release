@@ -10,7 +10,7 @@ Below are the rationales, notes, and caveats for this claim, organized by each r
 
 ### Version Scheme [1.i]
 
-`console_bridge_vendor` uses `semver` according to the recommendation for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#versioning).
+`console_bridge_vendor` uses `semver` according to the recommendation for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/foxy/Contributing/Developer-Guide.html#versioning).
 
 ### Version Stability [1.ii]
 
@@ -30,11 +30,11 @@ This is a vendor package for `libconsole-bridge-dev` and as such does not declar
 
 ## Change Control Process [2]
 
-`console_bridge_vendor` follows the recommended guidelines for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#change-control-process).
+`console_bridge_vendor` follows the recommended guidelines for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/foxy/Contributing/Developer-Guide.html#change-control-process).
 
 ### Change Requests [2.i]
 
-All changes will occur through a pull request, check the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#change-control-process) for additional information.
+All changes will occur through a pull request, check the [ROS 2 Developer Guide](https://docs.ros.org/en/foxy/Contributing/Developer-Guide.html#change-control-process) for additional information.
 
 ### Contributor Origin [2.ii]
 
@@ -42,7 +42,7 @@ This package uses DCO as its confirmation of contributor origin policy. More inf
 
 ### Peer Review Policy [2.iii]
 
-All pull requests will be peer-reviewed, check [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#change-control-process) for additional information.
+All pull requests will be peer-reviewed, check [ROS 2 Developer Guide](https://docs.ros.org/en/foxy/Contributing/Developer-Guide.html#change-control-process) for additional information.
 
 ### Continuous Integration [2.iv]
 
@@ -92,7 +92,7 @@ The copyright holders each provide a statement of copyright in each source code 
 
 ### Performance [4.iv]
 
-The Console Bridge package is benchmarked and the most recent test results can be found [here](http://build.ros2.org/view/Rci/job/Rci__benchmark_ubuntu_focal_amd64/BenchmarkTable/).
+The Console Bridge package is benchmarked and the most recent test results can be found [here](http://build.ros2.org/view/Fci/job/Fci__benchmark_ubuntu_focal_amd64/BenchmarkTable/).
 
 `console_bridge_vendor` does not provide performance testing. For vendored packages, this will be considered to be addressed in the external dependency.
 
@@ -114,7 +114,7 @@ Current nightly results can be seen here:
 
 ### Direct Runtime non-ROS Dependency [5.iii]
 
-`console_bridge_vendor` depends directly on the external dependency `libconsole-bridge-dev`, which is qualified as quality level 2 in its [Quality Declaration](https://github.com/ros/console_bridge/blob/master/QUALITY_DECLARATION.md).
+`console_bridge_vendor` depends directly on the external dependency `libconsole-bridge-dev`, which is qualified as quality level 2 in its [Quality Declaration](https://github.com/ros/console_bridge/blob/foxy/QUALITY_DECLARATION.md).
 
 ## Platform Support [6]
 
