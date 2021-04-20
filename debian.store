@@ -1,1 +1,1 @@
-{"base": "1687ed5", "parent": "debian/rolling/console_bridge_vendor", "previous": "18fb494", "trim": "", "trimbase": ""}
+{"base": "b2847d3", "parent": "debian/galactic/console_bridge_vendor", "previous": "d2e4c6e", "trim": "", "trimbase": ""}
