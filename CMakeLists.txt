@@ -26,7 +26,7 @@ macro(build_console_bridge)
 
   set(extra_cmake_args
     "-DCMAKE_INSTALL_LIBDIR=${CMAKE_INSTALL_LIBDIR}"
-    "-DCMAKE_INSTALL_INCLUDEDIR=${CMAKE_INSTALL_INCLUDEDIR}"
+    "-DCMAKE_INSTALL_INCLUDEDIR=${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}"
   )
   if(DEFINED CMAKE_BUILD_TYPE)
     list(APPEND extra_cmake_args -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE})
@@ -64,10 +64,10 @@ macro(build_console_bridge)
 
   include(ExternalProject)
 
-  # Get console_bridge 0.5.1
-  externalproject_add(console_bridge-1.0.1
-    URL https://github.com/ros/console_bridge/archive/1.0.1.tar.gz
-    URL_MD5 9f5351994c7690b37f88e9f70e478061
+  # Download and build console_bridge
+  externalproject_add(console_bridge-1.0.2
+    URL https://github.com/ros/console_bridge/archive/1.0.2.tar.gz
+    URL_HASH SHA256=303a619c01a9e14a3c82eb9762b8a428ef5311a6d46353872ab9a904358be4a4
     TIMEOUT 600
     CMAKE_ARGS
       -DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install
@@ -87,14 +87,16 @@ macro(build_console_bridge)
     USE_SOURCE_PERMISSIONS
   )
 
-  set(console_bridge_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install/${CMAKE_INSTALL_INCLUDEDIR})
+  set(console_bridge_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install/${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME})
   set(console_bridge_LIBRARY_DIRS ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install/${CMAKE_INSTALL_LIBDIR})
   set(console_bridge_LIBRARIES console_bridge)
 endmacro()
 
+# Version 1.0.1 is fine if it's already installed on the system
 if(NOT console_bridge_FOUND OR "${console_bridge_VERSION}" VERSION_LESS 1.0.1)
   build_console_bridge()
-  set(extra_test_dependencies console_bridge-1.0.1)
+  # 1.0.2 is necessary when building in a workspace so others can override it
+  set(extra_test_dependencies console_bridge-1.0.2)
 endif()
 
 # TODO(blast545): This section and package.xml should be updated once copyright auto is solved.
