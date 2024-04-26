@@ -1,3 +1,26 @@
+## console_bridge_vendor (rolling) - 1.8.0-1
+
+The packages in the `console_bridge_vendor` repository were released into the `rolling` distro by running `/usr/bin/bloom-release console_bridge_vendor --rosdistro rolling --non-interactive` on `Fri, 26 Apr 2024 14:59:44 -0000`
+
+The `console_bridge_vendor` package was released.
+
+Version of package(s) in repository `console_bridge_vendor`:
+
+- upstream repository: https://github.com/ros2/console_bridge_vendor.git
+- release repository: https://github.com/ros2-gbp/console_bridge_vendor-release.git
+- rosdistro version: `1.7.1-2`
+- old version: `1.7.1-2`
+- new version: `1.8.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## console_bridge_vendor (rolling) - 1.7.1-1
 
 The packages in the `console_bridge_vendor` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling console_bridge_vendor` on `Tue, 11 Jul 2023 19:13:36 -0000`
