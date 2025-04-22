@@ -1,0 +1,13 @@
+Source: ros-kilted-console-bridge-vendor
+Section: misc
+Priority: optional
+Maintainer: Scott K Logan <scott@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), libconsole-bridge-dev, ros-kilted-ament-cmake, ros-kilted-ament-cmake-vendor-package, ros-kilted-ament-lint-auto <!nocheck>, ros-kilted-ament-lint-common <!nocheck>, ros-kilted-performance-test-fixture <!nocheck>, ros-kilted-ros-workspace
+Homepage: https://github.com/ros/console_bridge
+Standards-Version: 3.9.2
+
+Package: ros-kilted-console-bridge-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libconsole-bridge-dev, ros-kilted-ros-workspace
+Description: Wrapper around console_bridge, providing nothing but a dependency on console_bridge, on some systems.
+ On others, it provides an ExternalProject build of console_bridge.
