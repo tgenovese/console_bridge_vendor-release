@@ -1,0 +1,22 @@
+ros-rolling-console-bridge-vendor (1.9.1-1noble) noble; urgency=high
+
+  * Update CMake version here and console_bridge (#44 <https://github.com/ros2/console_bridge_vendor/issues/44>)
+  * Contributors: Alejandro Hernández Cordero
+
+ -- Scott K Logan <scott@openrobotics.org>  Tue, 01 Jul 2025 00:00:00 -0000
+
+ros-rolling-console-bridge-vendor (1.9.0-1noble) noble; urgency=high
+
+  * Remove CODEOWNERS and mirror-rolling-to-master workflow. (#42 <https://github.com/ros2/console_bridge_vendor/issues/42>)
+  * Contributors: Chris Lalancette
+
+ -- Scott K Logan <scott@openrobotics.org>  Fri, 25 Apr 2025 00:00:00 -0000
+
+ros-rolling-console-bridge-vendor (1.8.0-1noble) noble; urgency=high
+
+  * Update quality declaration doc (#41 <https://github.com/ros2/console_bridge_vendor/issues/41>)
+  * Contributors: Christophe Bedard
+
+ -- Scott K Logan <scott@openrobotics.org>  Fri, 26 Apr 2024 00:00:00 -0000
+
+
