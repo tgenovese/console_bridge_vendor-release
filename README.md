@@ -1,3 +1,26 @@
+## console_bridge_vendor (jazzy) - 1.7.1-4
+
+The packages in the `console_bridge_vendor` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --rosdistro jazzy --override-release-repository-push-url git@github.com:tgenovese/console_bridge_vendor-release.git console_bridge_vendor` on `Mon, 21 Jul 2025 20:47:15 -0000`
+
+The `console_bridge_vendor` package was released.
+
+Version of package(s) in repository `console_bridge_vendor`:
+
+- upstream repository: https://github.com/ros2/console_bridge_vendor.git
+- release repository: https://github.com/tgenovese/console_bridge_vendor-release.git
+- rosdistro version: `1.7.1-3`
+- old version: `1.7.1-3`
+- new version: `1.7.1-4`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## console_bridge_vendor (rolling) - 1.9.1-1
 
 The packages in the `console_bridge_vendor` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling console_bridge_vendor` on `Tue, 01 Jul 2025 16:11:12 -0000`
